@@ -2,7 +2,6 @@ import cv2
 import glob
 import cvlib as cv
 import numpy as np
-import random
 from time import sleep
 from cvlib.object_detection import draw_bbox
 
@@ -34,5 +33,4 @@ for file in glob.glob(path):
     cv2.imshow("FRAME",c)
     cv2.waitKey(500)
     sleep(0.01)
-    random.shuffle(c)
     cv2.destroyAllWindows
