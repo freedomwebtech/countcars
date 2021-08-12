@@ -26,7 +26,7 @@ def object(i):
     count (b)
    
 
-path = "/home/pi/Downloads/images/*.*"
+path = "/home/pi/countcars/*.*"
 for file in glob.glob(path):
     image_read = cv2.imread(file)
     c=cv2.resize(image_read, (640, 480))
